@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 0;
+}
+nav{
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10vw;
+    align-items: center;
+    animation-name: bajar;
+    animation-duration: 1s;
+
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+}
+}
+h1, h2 {
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+a:hover{
+    color: #218AB6;
+    transition-duration: .5s;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+#logo > img{
+    transition-duration: .5s;
+}
+}
+#logo:hover > img{
+    transform: rotate(-30deg);
+    transition-duration: .5s;
+}
+
+#links{
+    display: flex;
+    column-gap: 25px;
+}
+
+#banner{
+    background-image: url('Captura-de-Pantalla-2020-02-11-a-las-11.45.18.png');
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20PX;
+    animation-name: aparecer;
+    animation-duration: 1s;  
+}
+@keyframes aparecer {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+}
+
+}
+#titulo{
+    font-size: 3rem;
+    background-color: #000000;
+    padding: 5px 20px;
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+@keyframes girar{
+  0%{
+    transform: scale(1);
+}
+  70%{
+    transform: scale(1.4);
+}
+100%{
+    transform: scale(1);
+}
+} 
+#subtitulo{
+    font-size: 1.2rem;
+    background-color: #218AB6;
+    padding: 3px 10px;
+}
+
+section{
+    margin: 80px 120px;
+
+}
+
+.header{
+    height: 10vh;
+
+}
+
+
+.header>h1{
+    height: 10vh;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.content{
+    display: flex;
+}
+
+.left, .right{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.left > p, .right > p{
+    color: #343434
+}
+
+
+h6{
+    font-size: 1.1rem;
+}
+
+
+
+.icono{
+    display: flex;
+    justify-content: space-between;
+}
